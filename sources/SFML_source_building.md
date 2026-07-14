@@ -9,12 +9,11 @@ Replace the current sources/SFML-3.1.0/CMakePresets.json file with the one provi
 
 See sources/SFML-3.1.0/cmake/SFMLConfig.cmake.in for more information on the usage of the SFML modules, Static/Dynamic Libraries etc.
 
-Run: 
-cmake --preset dev --config Release
-cmake --preset dev --config Debug
-cmake --preset dev-static --config Release
-cmake --preset dev-static --config Debug
-
+Run:\
+cmake --preset dev --config Release\
+cmake --preset dev --config Debug\
+cmake --preset dev-static --config Release\
+cmake --preset dev-static --config Debug\
 cmake --install build
 
 This will build all the SFML library binaries and install them to libraries/external/SFML/
