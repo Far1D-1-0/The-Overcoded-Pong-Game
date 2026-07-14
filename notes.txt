@@ -1,0 +1,16 @@
+PONG game libs:
+Configuration
+GameObjects
+Generics
+Utilities
+
+Currently this are the interdependencies:
+GameObjects <- Configuration
+
+Later interdependencies:
+GameObjects <- Configuration
+GameObjects <- Generics
+GameObjects <- Utilities
+Generics <- Configuration
+Generics <- Utilities
+Utilities <- Configuration

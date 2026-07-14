@@ -1,0 +1,7 @@
+# Ignore build directory
+build/
+# Ignore library installation directory
+libraries/
+# Ignore SFML source code
+sources/SFML-3.1.0
+

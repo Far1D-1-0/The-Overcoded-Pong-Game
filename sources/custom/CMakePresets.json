@@ -1,0 +1,28 @@
+{
+  "version": 3,
+  "configurePresets":[
+    {
+      "name": "dev",
+      "binaryDir": "build",
+      "generator": "Ninja Multi-Config",
+      "installDir": "${sourceDir}/../../libraries/external/SFML/",
+      "cacheVariables": {
+        "CMAKE_CXX_EXTENSIONS": "OFF",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "SFML_BUILD_EXAMPLES": "OFF",
+        "SFML_BUILD_TEST_SUITE": "ON",
+        "SFML_ENABLE_STDLIB_ASSERTIONS": "ON",
+        "SFML_WARNINGS_AS_ERRORS": "ON",
+	"CMAKE_CXX_STANDARD": "17",
+	"BUILD_SHARED_LIBS": "ON"
+      }
+    },
+    {
+      "name": "dev-static",
+      "inherits": "dev",
+      "cacheVariables": {
+        "BUILD_SHARED_LIBS": "OFF"
+      }
+    }
+  ]
+}
